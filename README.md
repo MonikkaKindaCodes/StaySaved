@@ -1,2 +1,2 @@
 # StaySaved
-Divante Edgeston's Stay Saved Site
+Divante's Stay Saved Site
