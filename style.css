@@ -1,51 +1,18 @@
-* {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-
-html {
-    font-family: 'Lato', 'Arial', sans-serif;
-    color: #555;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-.clearfix {zoom: 1;}
-.clearfix:after {
-    content: '';
-    clear: both;
-    display: block;
-    height: 0; 
-    visibility: hidden;
-}
-
-/* Reusable Components */
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-i {
-    color: #e67e22;
-}
-
-/* Header */
-.hero-text-box {
-    position: absolute;
-    width: 1140;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-}
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Divante.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Divante.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 h1,
@@ -90,10 +57,8 @@ section {
     padding: 80px 0;
 }
 .logo {
-    height: 150px;
-    width: auto;
-    float: left;
-    margin-top: 20px;
+    height:150px;
+    width: auto; 
 }
 
 .main-nav {
@@ -102,56 +67,23 @@ section {
     margin-top: 60px;
 }
 
-.main-nav li {
+.main-nav li{
     display: inline-block;
     margin-left: 40px;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
+.main-nav li a:link, .main-nav li a:visited {
     padding: 8px 0;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 90%;
+    font-size: 100%;
+    font-weight: 800;
     color: #fff;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: border-bottom 0.5s;
 }
 
 .main-nav li a:hover, 
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
-}
-
-/* Buttons*/
-
-.btn-full:link, 
-.btn-full:visited, 
-input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
-    color: #fff;
-    margin-right: 16px;
-}
-
-.btn-full:hover, 
-.btn-full:active
- {
-    background-color: #b05d14;
-}
-
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #b05d14;
-}
-
-.btn-ghost:hover {
-    background-color: #b05d14;
-    color: #fff;
-    
-}
-.btn:hover, 
-.btn:active {
-    background-color: #b05d14;
 }
